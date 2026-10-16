@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi página web</title>
+    <link rel="stylesheet" href="{{ url_for('door_stylesheet', filename='puerta4.css') }}">
+</head>
+
+<body>
+    <h1 style="text-align: center;">Perdiste, llegaste a China</h1>
+
+    <div class="contenedor">
+        <img class="imagen" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjK7yrepP6vzh_0Mez-q5JxEEbaxi73gbX3RZ1Q54FJINbZWcYikNuiq8&s=10" alt="Imagen de Perú">
+        <audio class="audio" autoplay loop controls preload="auto">
+            <source src="{{ url_for('static', filename='kahoot - QuickSounds.com.mp3') }}" type="audio/mpeg">
+            Tu navegador no admite la reproducción de audio.
+        </audio>
+        <a class="boton" href="{{ url_for('index') }}">Jugar de nuevo</a>
+    </div>
+</body>
+
+</html>

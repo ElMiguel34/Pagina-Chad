@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi página web</title>
+  <link rel="stylesheet" href="{{ url_for('door_stylesheet', filename='puerta2.css') }}">
+</head>
+
+<body>
+
+  <h1 style="text-align: center;">Selecciona un portal</h1>
+  <div class="contenedor">
+
+    <a class="opcion" href="{{ url_for('puerta4') }}">
+      <img src="https://i.pinimg.com/originals/5b/53/73/5b537363393dc26c68b566fe482eb32d.png" alt="Puerta 2">
+    </a>
+
+    <a class="opcion" href="{{ url_for('puerta5') }}">
+      <img src="https://i.pinimg.com/originals/5b/53/73/5b537363393dc26c68b566fe482eb32d.png" alt="Puerta 3">
+    </a>
+
+    <audio class="audio" autoplay loop controls preload="auto">
+      <source src="{{ url_for('static', filename='kahoot - QuickSounds.com.mp3') }}" type="audio/mpeg">
+      Tu navegador no admite la reproducción de audio.
+    </audio>
+    <a class="boton" href="{{ url_for('index') }}">Jugar de nuevo</a>
+
+  </div>
+
+</body>
+</html>

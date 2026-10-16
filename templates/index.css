@@ -1,0 +1,26 @@
+.contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contenedor img {
+    width: 400px;
+    height: 400px;
+}
+
+.contenedor img {
+    width: 60%;
+    max-width: 700px;
+    height: auto;
+    animation: girar 3s linear infinite;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

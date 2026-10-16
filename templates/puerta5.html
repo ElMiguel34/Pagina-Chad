@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi página web</title>
+    <link rel="stylesheet" href="{{ url_for('door_stylesheet', filename='puerta5.css') }}">
+</head>
+
+<body>
+    <h1 style="text-align: center;">Ganaste, encontraste la scar dorada</h1>
+
+    <div class="contenedor">
+        <img class="imagen" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzZzdcvsGHtYJkNgWETdfIWcIBKHXW3v64iAi-Ta1XGA&s" alt="Imagen de Perú">
+        <audio class="audio" autoplay loop controls preload="auto">
+            <source src="{{ url_for('static', filename='fortnite default dance - QuickSounds.com.mp3') }}" type="audio/mpeg">
+            Tu navegador no admite la reproducción de audio.
+        </audio>
+        <a class="boton" href="{{ url_for('index') }}">Jugar de nuevo</a>
+    </div>
+</body>
+
+</html>
